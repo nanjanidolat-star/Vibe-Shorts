@@ -1,0 +1,347 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+
+    <title>VibeShorts - Short Video Platform</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<!-- index.html -->
+<form id="contactForm">
+    <h2>Contact Us</h2>
+
+    <input type="text" id="name" placeholder="Your Name" required>
+
+    <input type="email" id="email" placeholder="Your Email" required>
+
+    <input type="tel" id="phone" placeholder="Your Phone" required>
+
+    <textarea id="message" placeholder="Your Message" required></textarea>
+
+    <label class="consent">
+        <input type="checkbox" id="consent" required>
+        I agree to submit this information.
+    </label>
+
+    <button type="submit">Submit</button>
+
+    <p id="formMessage"></p>
+</form>
+
+<script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Top Navigation -->
+    <header class="topbar">
+        <div class="logo">
+            <span class="logo-icon">V</span>
+            <span>VibeShorts</span>
+        </div>
+
+        <div class="top-actions">
+            <button id="searchBtn" class="icon-btn" aria-label="Search">
+                🔍
+            </button>
+
+            <button id="uploadBtn" class="upload-btn">
+                ＋ Upload
+            </button>
+
+            <button id="profileBtn" class="profile-mini">
+                👤
+            </button>
+        </div>
+    </header>
+
+    <!-- Search Box -->
+    <div id="searchBox" class="search-box">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search creators or videos..."
+        >
+    </div>
+
+    <!-- Main Feed -->
+    <main id="videoFeed" class="video-feed">
+
+        <!-- Video 1 -->
+        <article class="video-card">
+
+            <video
+                class="video"
+                src="https://cdn.coverr.co/videos/coverr-a-woman-dancing-1575/1080p.mp4"
+                loop
+                muted
+                playsinline
+            ></video>
+
+            <div class="video-gradient"></div>
+
+            <div class="video-info">
+                <h3>@sarah_vibes</h3>
+                <p>Beautiful evening vibes ✨</p>
+                <span>🎵 Original Sound</span>
+            </div>
+
+            <div class="video-actions">
+
+                <button class="action like-btn">
+                    <strong>♡</strong>
+                    <small>12.4K</small>
+                </button>
+
+                <button class="action comment-btn">
+                    <strong>💬</strong>
+                    <small>842</small>
+                </button>
+
+                <button class="action share-btn">
+                    <strong>↗</strong>
+                    <small>Share</small>
+                </button>
+
+                <button class="action mute-btn">
+                    <strong>🔇</strong>
+                    <small>Sound</small>
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- Video 2 -->
+        <article class="video-card">
+
+            <video
+                class="video"
+                src="https://cdn.coverr.co/videos/coverr-waves-on-the-beach-1576/1080p.mp4"
+                loop
+                muted
+                playsinline
+            ></video>
+
+            <div class="video-gradient"></div>
+
+            <div class="video-info">
+                <h3>@travel_world</h3>
+                <p>Wish you were here 🌊</p>
+                <span>🎵 Ocean Dreams</span>
+            </div>
+
+            <div class="video-actions">
+
+                <button class="action like-btn">
+                    <strong>♡</strong>
+                    <small>8.7K</small>
+                </button>
+
+                <button class="action comment-btn">
+                    <strong>💬</strong>
+                    <small>319</small>
+                </button>
+
+                <button class="action share-btn">
+                    <strong>↗</strong>
+                    <small>Share</small>
+                </button>
+
+                <button class="action mute-btn">
+                    <strong>🔇</strong>
+                    <small>Sound</small>
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- Video 3 -->
+        <article class="video-card">
+
+            <video
+                class="video"
+                src="https://cdn.coverr.co/videos/coverr-city-lights-1577/1080p.mp4"
+                loop
+                muted
+                playsinline
+            ></video>
+
+            <div class="video-gradient"></div>
+
+            <div class="video-info">
+                <h3>@night_creator</h3>
+                <p>City lights hit different 🌃</p>
+                <span>🎵 Night Drive</span>
+            </div>
+
+            <div class="video-actions">
+
+                <button class="action like-btn">
+                    <strong>♡</strong>
+                    <small>21K</small>
+                </button>
+
+                <button class="action comment-btn">
+                    <strong>💬</strong>
+                    <small>1.2K</small>
+                </button>
+
+                <button class="action share-btn">
+                    <strong>↗</strong>
+                    <small>Share</small>
+                </button>
+
+                <button class="action mute-btn">
+                    <strong>🔇</strong>
+                    <small>Sound</small>
+                </button>
+
+            </div>
+
+        </article>
+
+    </main>
+
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+
+        <button class="nav-item active">
+            <span>⌂</span>
+            <small>Home</small>
+        </button>
+
+        <button class="nav-item" id="discoverBtn">
+            <span>🔎</span>
+            <small>Discover</small>
+        </button>
+
+        <button class="nav-upload" id="bottomUpload">
+            +
+        </button>
+
+        <button class="nav-item">
+            <span>💬</span>
+            <small>Inbox</small>
+        </button>
+
+        <button class="nav-item">
+            <span>👤</span>
+            <small>Profile</small>
+        </button>
+
+    </nav>
+
+
+    <!-- Upload Modal -->
+    <div id="uploadModal" class="modal">
+
+        <div class="modal-content">
+
+            <button id="closeModal" class="close-btn">
+                ×
+            </button>
+
+            <h2>Upload Video</h2>
+
+            <p class="modal-description">
+                Select a video from your device.
+            </p>
+
+            <label class="file-upload">
+                <span>📹</span>
+                <strong>Select Video</strong>
+                <input
+                    type="file"
+                    id="videoInput"
+                    accept="video/*"
+                    hidden
+                >
+            </label>
+
+            <input
+                id="captionInput"
+                class="caption-input"
+                type="text"
+                placeholder="Write a caption..."
+            >
+
+            <button id="publishBtn" class="publish-btn">
+                Publish
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Comments Modal -->
+    <div id="commentModal" class="modal">
+
+        <div class="modal-content comments">
+
+            <button id="closeComments" class="close-btn">
+                ×
+            </button>
+
+            <h2>Comments</h2>
+
+            <div id="commentsList" class="comments-list">
+
+                <div class="comment">
+                    <strong>@alex</strong>
+                    <p>Awesome video 🔥</p>
+                </div>
+
+                <div class="comment">
+                    <strong>@maria</strong>
+                    <p>Love this! ❤️</p>
+                </div>
+
+            </div>
+
+            <div class="comment-form">
+
+                <input
+                    id="commentInput"
+                    type="text"
+                    placeholder="Add a comment..."
+                >
+
+                <button id="sendComment">
+                    Send
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
