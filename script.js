@@ -1,6 +1,6 @@
 // script.js
 
-const GOOGLE_SCRIPT_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_URL_HERE";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwvf9XMxHHJgVk6CCAUoTMUz7wU486LFsEIjaSh6T9GnqeJWZo53txvo6sUkOtS-oMW/exec";
 
 const form = document.getElementById("contactForm");
 const formMessage = document.getElementById("formMessage");
